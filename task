@@ -1,0 +1,8 @@
+#!/usr/local/bin/node 
+
+//Please choose the node path properly
+
+var db = require('./src/lib/updater').Db;
+
+db.updateClubStats();
+db.updatePlayerStats();
