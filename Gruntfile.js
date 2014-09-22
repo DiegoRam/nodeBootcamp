@@ -1,25 +1,10 @@
+var path = require('path');
+
 module.exports = function(grunt){
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON
 		('package.json'),
-		watch: {
-			scripts: {
-			    files: ['src/static/js/*.js'],
-			    options: {
-			      spawn: true,
-			      livereload: true
-			    }
-			},
-			templates: {
-				files: 'src/templates/*.jade',
-    			tasks: ['jade'],
-    			options: {
-    				spawn: true,
-      				livereload: true,
-    			}				
-			}
-		},
 		run: {
 			min_server: {
 				options : {
@@ -27,13 +12,26 @@ module.exports = function(grunt){
 				},
 				args: ['simple-server.js']
 			}
+		},
+		express: {
+			complex_server: {
+				options: {
+					port: 9001,
+					hostname: 'localhost',
+					server: './server-exp.js',
+					bases: [path.resolve(__dirname, 'templates'),
+					path.resolve(__dirname, 'static')],
+					livereload: true,
+					serverreload: true
+				}
+			}
 		}
-
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-run');
+	grunt.loadNpmTasks('grunt-express');
 
-	grunt.registerTask('default', ['run:min_server','watch']);
+	grunt.registerTask('default', ['run:min_server','express', 'express-keepalive']);
 
 };
