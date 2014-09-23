@@ -1,9 +1,14 @@
 var express = require('express'),
 	app = express(),
-	index = require('./src/controllers/index').HelloCatExp
+	index = require('./src/controllers/index').HelloCatExp,
+	landing = require('./src/controllers/landing');
+
+app.set('views', __dirname + '/src/templates')
+app.set('view engine', 'jade')
+app.use('/public', express.static(__dirname + '/src/static'));
 
 app.get('/hello', index);
-//app.get('/', welcome);
+app.get('/',landing.wellcome);
 
 console.log("running application at: " );
 

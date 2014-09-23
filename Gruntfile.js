@@ -5,33 +5,67 @@ module.exports = function(grunt){
 	grunt.initConfig({
 		pkg: grunt.file.readJSON
 		('package.json'),
+		watch: {
+			configFiles: {
+				files: ['Gruntfile.js'],
+				options: {
+					reload: true
+				}
+			},
+			html: {
+				files: 'src/static/*.html',
+				options: {
+					livereload: true
+				}
+			},
+			templates: {
+				files: 'src/templates',
+				option: {
+					livereload: true
+				}
+			}
+		},
 		run: {
 			min_server: {
 				options : {
 					wait: false
 				},
 				args: ['simple-server.js']
+			},
+			cassandra: {
+				option: {
+					wait: false
+				},
+				cmd: 'sudo cassandra'
 			}
 		},
 		express: {
-			complex_server: {
+			all: {
 				options: {
 					port: 9001,
 					hostname: 'localhost',
 					server: './server-exp.js',
-					bases: [path.resolve(__dirname, 'templates'),
-					path.resolve(__dirname, 'static')],
-					livereload: true,
-					serverreload: true
-				}
+					bases: [path.resolve(__dirname)],
+					livereload: true				
+				}				
+			}
+		},
+		open: {
+			all: {
+				path: "http://localhost:9001/public/index.html"
 			}
 		}
+	});
+
+	grunt.event.on('watch', function(action, filepath, target) {
+	  grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-run');
 	grunt.loadNpmTasks('grunt-express');
+	grunt.loadNpmTasks('grunt-open');
 
-	grunt.registerTask('default', ['run:min_server','express', 'express-keepalive']);
+	grunt.registerTask('default', ['run:min_server','express', 'open','watch']);
 
 };

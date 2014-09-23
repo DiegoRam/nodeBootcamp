@@ -8,10 +8,12 @@
     "grunt-contrib-uglify": "^0.6.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-express": "^1.4.1",
+    "grunt-open": "^0.2.3",
     "grunt-run": "^0.2.4"
   },
   "dependencies": {
     "cassandra-client": "^0.15.2",
-    "express": "^4.9.4"
+    "express": "^4.9.4",
+    "jade": "^1.7.0"
   }
 }
