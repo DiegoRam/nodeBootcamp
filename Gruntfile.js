@@ -19,7 +19,7 @@ module.exports = function(grunt){
 				}
 			},
 			templates: {
-				files: 'src/templates',
+				files: 'src/templates/*.jade',
 				option: {
 					livereload: true
 				}
@@ -36,7 +36,7 @@ module.exports = function(grunt){
 				option: {
 					wait: false
 				},
-				cmd: 'sudo cassandra'
+				exec: 'sudo cassandra'
 			}
 		},
 		express: {
@@ -45,7 +45,8 @@ module.exports = function(grunt){
 					port: 9001,
 					hostname: 'localhost',
 					server: './server-exp.js',
-					bases: [path.resolve(__dirname)],
+					bases: [path.resolve(__dirname, 'src/static'),
+					path.resolve(__dirname,'src/templates')],
 					livereload: true				
 				}				
 			}

@@ -1,0 +1,19 @@
+{
+  "name" : "nodePatterns",
+  "version": "0.1",
+  "dependencies" : {
+    "jquery" : "latest",
+    "bootstrap": "latest"
+  },
+  "install": {
+    "path" : {
+      "css": "src/static/css",
+      "js": "src/static/js",
+      "eot": "src/static/fonts",
+      "svg": "src/static/fonts",
+      "ttf": "src/static/fonts",
+      "woff": "src/static/fonts",
+      "less": "src/static/css"
+    }
+  }
+}
