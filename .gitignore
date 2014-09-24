@@ -4,3 +4,4 @@ src/static/css/bootstrap/*
 src/static/js/jquery/*
 src/static/js/bootstrap/*
 src/static/fonts/*
+.DS_Store
