@@ -12,6 +12,7 @@ exports.HelloCat = function(req,res){
 	res.end();
 };
 
+//index.js
 exports.HelloCatExp = function(req, res){
 	res.send("Hello Cat from express");
 }
