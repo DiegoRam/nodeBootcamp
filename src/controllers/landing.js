@@ -9,5 +9,9 @@ LandingController.prototype.wellcome = function(req, res){
 	}
 }();
 
+LandingController.prototype.mypage = function(req, res){
+	res.render('mypage');
+}
+
 //to add instance to available modules
 module.exports = new LandingController();

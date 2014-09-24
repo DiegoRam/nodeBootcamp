@@ -1,6 +1,13 @@
-doctype html
-html(lang="en")
-	head
-		title Welcome
-	body
-		h1 this is my title Mi rusa
+extends layout
+block content
+	.row
+		.col-md-6.col-md-offset-3
+			.well
+				h3 my content 
+			.row
+				.panel.panel-default
+					.panel-heading mydashboard
+					.panel-body
+						p 
+							| here is 
+							| my multiline content 

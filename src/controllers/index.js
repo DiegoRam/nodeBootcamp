@@ -1,3 +1,4 @@
+//index.js
 var db = require('../lib/updater').Db;
 
 exports.HelloCat = function(req,res){

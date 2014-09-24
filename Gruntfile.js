@@ -47,13 +47,16 @@ module.exports = function(grunt){
 					server: './server-exp.js',
 					bases: [path.resolve(__dirname, 'src/static'),
 					path.resolve(__dirname,'src/templates')],
-					livereload: true				
+					livereload: true		
 				}				
 			}
 		},
 		open: {
 			all: {
-				path: "http://localhost:9001/public/index.html"
+				path: "http://localhost:9001/",
+				options: {
+					delay : 5000
+				}
 			}
 		}
 	});
