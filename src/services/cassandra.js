@@ -1,3 +1,4 @@
+//cassandra.js
 function CassandraDB(){}
 
 CassandraDB.prototype.getById = function(id) {
