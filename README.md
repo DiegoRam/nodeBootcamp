@@ -1,7 +1,7 @@
 NodeBootcamp
 ============
 
-This is a simple project which show us a real application should look like.
+This is a simple project which show us how a real application should look like.
 
 # Installation
 
@@ -26,4 +26,4 @@ Doing so, grunt will show you a new window at your browser with the current appl
 Also, only for education porpuse, you can find another web application at this url http://localhost:8001 with a simple Connect server.
 
 
-***The slides of my presentation are placed in SLIDES folder***
+***The slides of my first  presentation are placed in SLIDES_PART_1 folder***
