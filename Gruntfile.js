@@ -45,8 +45,8 @@ module.exports = function(grunt){
 					port: 9001,
 					hostname: 'localhost',
 					server: './server-exp.js',
-					bases: [path.resolve(__dirname, 'src/static'),
-					path.resolve(__dirname,'src/templates')],
+					bases: [path.resolve(__dirname, 'static'),
+					path.resolve(__dirname,'templates')],
 					livereload: true		
 				}				
 			}

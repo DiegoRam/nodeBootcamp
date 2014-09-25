@@ -4,9 +4,9 @@ var express = require('express'),
 	index = require('./src/controllers/index').HelloCatExp,
 	landing = require('./src/controllers/landing');
 
-app.set('views', __dirname + '/src/templates')
+app.set('views', __dirname + '/templates')
 app.set('view engine', 'jade')
-app.use('/public', express.static(__dirname + '/src/static'));
+app.use('/public', express.static(__dirname + '/static'));
 
 
 

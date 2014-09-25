@@ -7,13 +7,13 @@
   },
   "install": {
     "path" : {
-      "css": "src/static/css",
-      "js": "src/static/js",
-      "eot": "src/static/fonts",
-      "svg": "src/static/fonts",
-      "ttf": "src/static/fonts",
-      "woff": "src/static/fonts",
-      "less": "src/static/css"
+      "css": "static/css",
+      "js": "static/js",
+      "eot": "static/fonts",
+      "svg": "static/fonts",
+      "ttf": "static/fonts",
+      "woff": "static/fonts",
+      "less": "static/css"
     }
   }
 }
