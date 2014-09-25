@@ -24,3 +24,6 @@ This is a simple project which show us a real application should look like.
 Doing so, grunt will show you a new window at your browser with the current application up&&running.
 
 Also, only for education porpuse, you can find another web application at this url http://localhost:8001 with a simple Connect server.
+
+
+*** The slides of my presentation are placed in SLIDES folder ***
