@@ -55,7 +55,7 @@ module.exports = function(grunt){
 			all: {
 				path: "http://localhost:9001/",
 				options: {
-					delay : 5000
+					delay : 3000
 				}
 			}
 		}
