@@ -1,7 +1,7 @@
 NodeBootcamp
 ============
 
-This is a simple project which show us a real application should look like.
+This is a simple project which show us how a real application should look like.
 
 # Installation
 
