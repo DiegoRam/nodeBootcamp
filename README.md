@@ -20,3 +20,7 @@ This is a simple project which show us a real application should look like.
 5. Run the task manager which will perform all the needed job for you!:
 
 		$ grunt
+
+Doing so, grunt will show you a new window at your browser with the current application up&&running.
+
+Also, only for education porpuse, you can find another web application at this url http://localhost:8001 with a simple Connect server.
