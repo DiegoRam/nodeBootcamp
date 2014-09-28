@@ -22,6 +22,7 @@ This is a simple project which show us how a real application should look like.
 		$ grunt
 
 Doing so, grunt will show you a new window at your browser with the current application up&&running.
+Please, do not forget to intall a LiveReload extesion for your browser of choice.
 
 Also, only for education porpuse, you can find another web application at this url http://localhost:8001 with a simple Connect server.
 
