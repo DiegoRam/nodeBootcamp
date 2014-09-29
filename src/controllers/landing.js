@@ -5,7 +5,7 @@ function LandingController(){
 LandingController.prototype.wellcome = function(req, res){
 	var self = this;
 	return function(req, res){
-		res.send('Hello I ve got a duck');
+		res.send('hello Cat');
 	}
 }();
 
