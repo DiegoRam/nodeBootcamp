@@ -1,6 +1,7 @@
 //index.js
 var db = require('../lib/updater').Db;
 
+//index.js
 exports.HelloCat = function(req,res){
 	var body = "Hello Cat";
 	res.writeHead(200, {
