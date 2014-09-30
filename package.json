@@ -9,10 +9,12 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-express": "^1.4.1",
     "grunt-open": "^0.2.3",
-    "grunt-run": "^0.2.4"
+    "grunt-run": "^0.2.4",
+    "mocha": "^1.21.4",
+    "vows": "^0.7.0"
   },
   "dependencies": {
-    "cassandra-client": "^0.15.2",
+    "cassandra-driver": "^1.0.0-beta1",
     "express": "^4.9.4",
     "jade": "^1.7.0"
   }
