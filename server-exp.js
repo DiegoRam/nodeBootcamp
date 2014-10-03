@@ -14,6 +14,8 @@ app.get('/hello', index);
 app.get('/',landing.wellcome);
 app.get('/mypage2', landing.mypage);
 
-console.log("running application at: " );
+app.listen(9001, function(){
+	console.log("running application at: " );
+});
 
-module.exports = app;
+//module.exports = app;
